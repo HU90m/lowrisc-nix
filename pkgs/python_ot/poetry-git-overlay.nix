@@ -11,17 +11,17 @@
   edalize = super.edalize.overridePythonAttrs (
     _: {
       src = pkgs.fetchzip {
-        url = "https://github.com/lowRISC/edalize/archive/refs/tags/v0.4.0.zip";
-        sha256 = "0c4kc1d6wzixfn4161ax8q45qlzm0iiwhzyjl6kfrymv2l5hv5by";
+        url = "https://github.com/olofk/edalize/archive/refs/tags/v0.5.4.zip";
+        hash = "sha256-pgyUpbSVRCHioJc82hZwG+JbpnL7t9ZvN4OcPHFsirs=";
       };
     }
   );
 
   fusesoc = super.fusesoc.overridePythonAttrs (
     _: {
-      src = pkgs.fetchzip {
-        url = "https://github.com/lowRISC/fusesoc/archive/refs/tags/ot-0.4.zip";
-        sha256 = "0dkrfgbmma7fq10ya4jyc8w5bhy3wi4kyqsvr75m2ck5iv2z4dd6";
+      src = pkgs.fetchurl {
+        url = "https://github.com/a-will/fusesoc/archive/refs/tags/2.3-dev0+a-will.zip";
+        hash = "sha256-GI8d1rXtJJFpE4OBkE5ZzMrnDDMuSjDuGJm81QgzJho=";
       };
     }
   );
