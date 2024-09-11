@@ -96,6 +96,7 @@ yapf = "0.32.0"
 zipfile2 = "0.0.12"
 chipwhisperer = { url = "https://github.com/newaetech/chipwhisperer-minimal/archive/2643131b71e528791446ee1bab7359120288f4ab.zip" }
 edalize = "0.5.4"
+fusesoc = { url = "https://github.com/a-will/fusesoc/archive/refs/tags/2.3-dev0+a-will.zip" }
 
 [build-system]
 requires = ["poetry-core"]

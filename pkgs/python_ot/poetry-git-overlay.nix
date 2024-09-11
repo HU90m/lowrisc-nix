@@ -10,4 +10,13 @@ final: prev: {
     }
   );
 
+  fusesoc = prev.fusesoc.overridePythonAttrs (
+    _: {
+      src = pkgs.fetchzip {
+        url = "https://github.com/a-will/fusesoc/archive/refs/tags/2.3-dev0+a-will.zip";
+        sha256 = "14y8g43gsp6wydn83bm2p9v08z489v9vfszm5kzrw0gp837xdl78";
+      };
+    }
+  );
+
 }

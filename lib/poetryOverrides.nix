@@ -42,6 +42,10 @@
       # Very slow build.
       preferWheel = true;
     };
+    jsonschema2md = prev.jsonschema2md.override {
+      # Very slow build.
+      preferWheel = true;
+    };
     libcst = prev.libcst.override {
       preferWheel = true;
       #  }).overridePythonAttrs ( old: {
