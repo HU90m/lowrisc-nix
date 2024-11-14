@@ -28,6 +28,7 @@
   sv-lang_6 = pkgs.callPackage ./sv-lang.nix {};
   veridian = pkgs.callPackage ./veridian/default.nix {inherit sv-lang_6;};
   peakrdl = pkgs.callPackage ./peakrdl.nix {};
+  interactive-html-bom = pkgs.callPackage ./interactive-html-bom.nix {};
 
   riscv64-gcc = pkgs.pkgsCross.riscv64.buildPackages.gcc;
   lowrisc-toolchain-gcc-rv32imcb = pkgs.callPackage ./lowrisc-toolchain-gcc-rv32imcb.nix {};
