@@ -416,23 +416,17 @@ files = [
 
 [[package]]
 name = "edalize"
-version = "0.4.0"
+version = "0.6.0"
 description = "Library for interfacing EDA tools such as simulators, linters or synthesis tools, using a common interface"
 optional = false
-python-versions = ">=3.6, <4"
+python-versions = "<4,>=3.6"
 files = [
-    {file = "v0.4.0.zip", hash = "sha256:da816ef1040d8063d4aa7377ef1fea33f0bffeca1f79a68b7a8930ef9d90c7c8"},
+    {file = "edalize-0.6.0-py3-none-any.whl", hash = "sha256:dab4b602faee41028924a73a97917f4911c676a5cfadcee5548ac38168f70034"},
+    {file = "edalize-0.6.0.tar.gz", hash = "sha256:9fe1ddbf0d860d78e437dbd3bc951bda616e4f79803a189a4c64f7a828ca9162"},
 ]
 
 [package.dependencies]
 Jinja2 = ">=3"
-
-[package.extras]
-reporting = ["pandas", "pyparsing"]
-
-[package.source]
-type = "url"
-url = "https://github.com/lowRISC/edalize/archive/refs/tags/v0.4.0.zip"
 
 [[package]]
 name = "enlighten"
@@ -448,6 +442,20 @@ files = [
 [package.dependencies]
 blessed = ">=1.17.7"
 prefixed = ">=0.3.2"
+
+[[package]]
+name = "fastjsonschema"
+version = "2.20.0"
+description = "Fastest Python implementation of JSON schema"
+optional = false
+python-versions = "*"
+files = [
+    {file = "fastjsonschema-2.20.0-py3-none-any.whl", hash = "sha256:5875f0b0fa7a0043a91e93a9b8f793bcbbba9691e7fd83dca95c28ba26d21f0a"},
+    {file = "fastjsonschema-2.20.0.tar.gz", hash = "sha256:3d48fc5300ee96f5d116f10fe6f28d938e6008f59a6a025c2649475b87f76a23"},
+]
+
+[package.extras]
+devel = ["colorama", "json-spec", "jsonschema", "pylint", "pytest", "pytest-benchmark", "pytest-cache", "validictory"]
 
 [[package]]
 name = "flake8"
@@ -467,23 +475,22 @@ pyflakes = ">=3.2.0,<3.3.0"
 
 [[package]]
 name = "fusesoc"
-version = "0.5.dev0"
-description = "FuseSoC is a package manager and a set of build tools for HDL (Hardware Description Language) code."
+version = "2.4"
+description = "Award-winnning package manager and build abstraction tool for HDL code"
 optional = false
-python-versions = ">=3.6, <4"
+python-versions = "<4,>=3.6"
 files = [
-    {file = "ot-0.5.dev0.zip", hash = "sha256:6d1d9b202748d160bc6da70ea8cf7a700ca80e1e7e4a78cbc1ec039bde595c65"},
+    {file = "fusesoc-2.4-py3-none-any.whl", hash = "sha256:6fecf1ef2e39d6ad38ddb3dc294bcfde302686e627c14359c52444129b246bb1"},
+    {file = "fusesoc-2.4.tar.gz", hash = "sha256:a9392dc0be5d1dcc54ed7b20f247bb8d5a9665c90775952cd5129e398487fa96"},
 ]
 
 [package.dependencies]
-edalize = ">=0.2.3"
-pyparsing = "*"
-pyyaml = "*"
+edalize = ">=0.4.1"
+fastjsonschema = "*"
+jsonschema2md = "*"
+pyparsing = ">=2.3.1"
+pyyaml = ">=6.0"
 simplesat = ">=0.8.0"
-
-[package.source]
-type = "url"
-url = "https://github.com/lowRISC/fusesoc/archive/refs/tags/ot-0.5.dev0.zip"
 
 [[package]]
 name = "gitdb"
@@ -635,6 +642,20 @@ pyrsistent = ">=0.14.0,<0.17.0 || >0.17.0,<0.17.1 || >0.17.1,<0.17.2 || >0.17.2"
 [package.extras]
 format = ["fqdn", "idna", "isoduration", "jsonpointer (>1.13)", "rfc3339-validator", "rfc3987", "uri-template", "webcolors (>=1.11)"]
 format-nongpl = ["fqdn", "idna", "isoduration", "jsonpointer (>1.13)", "rfc3339-validator", "rfc3986-validator (>0.1.0)", "uri-template", "webcolors (>=1.11)"]
+
+[[package]]
+name = "jsonschema2md"
+version = "0.9.0"
+description = "Convert JSON Schema to human-readable Markdown documentation"
+optional = false
+python-versions = ">=3.7.2,<4.0.0"
+files = [
+    {file = "jsonschema2md-0.9.0-py3-none-any.whl", hash = "sha256:b6b7ae067c355c887949646296fb04375f6e995d862cbe7ae81a34f085a63a67"},
+    {file = "jsonschema2md-0.9.0.tar.gz", hash = "sha256:3ef34181679c48bbd1ac228ad1d6441051ceef58ba90cba6b931d0368e00ec77"},
+]
+
+[package.dependencies]
+PyYAML = ">=6.0,<7.0"
 
 [[package]]
 name = "libclang"
@@ -1799,4 +1820,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8.1"
-content-hash = "6b43c4eb636989628c6292302592cf8d350feed4d4c28bd3d9cde511135c7e17"
+content-hash = "be40c54045431ecf1e831f96b34a33cc94f331717797286adee2bc9e331a568d"
